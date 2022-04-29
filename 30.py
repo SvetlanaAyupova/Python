@@ -13,4 +13,4 @@ def get_count(number):
         return 0
 
 s = get_count(d)
-print(f'Число Пи с заданной точностью {d} равно {round(pi, s)}')
+print(f'При d = {d}, π = {round(pi, s)}')
