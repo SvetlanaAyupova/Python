@@ -3,23 +3,14 @@
 
 from random import randint
 
-sequence = []
+lst = []
 for i in range(10):
-    sequence.append(randint(0, 10))
-print("Исходный список: ", sequence)
+    lst.append(randint(0, 10))
+print("Исходный список: ", lst)
 
-def non_repeated(a):
-    d = {}
-    non_repeated = []
-    for i in a:
-        if i not in d:
-            d[i] = 1
-        else:
-            d[i] += 1
-    for x in d:
-        if d[x] == 1:
-            non_repeated.append(x)
-    return non_repeated
-
-list = non_repeated(sequence)
-print("Неповторяющийся список: ", list)
+lst1 = []
+count = 0
+for i in lst:
+  if i not in lst1:
+    lst1.append(i)
+print(f'Неповторяющиеся элементы: {lst1}')
